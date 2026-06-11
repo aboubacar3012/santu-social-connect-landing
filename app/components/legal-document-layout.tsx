@@ -8,12 +8,6 @@ export function LegalDocumentLayout({
 }) {
   return (
     <>
-      <a
-        href="#legal-content"
-        className="focus-visible:ring-santu-accent sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-100 focus:rounded-xl focus:bg-white focus:px-4 focus:py-2 focus:text-santu-ink focus:ring-2 focus:ring-offset-2"
-      >
-        Aller au contenu
-      </a>
       <SiteHeader solidHeader />
       <div className="bg-santu-canvas min-h-dvh dark:bg-[#0a1219]">
         <main
