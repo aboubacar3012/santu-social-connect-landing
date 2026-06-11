@@ -1,5 +1,6 @@
 "use client";
 
+import { AuthProvider } from "@/contexts/auth-context";
 import {
   createContext,
   useCallback,
@@ -54,6 +55,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const value = useMemo(() => ({ theme, toggleTheme }), [theme, toggleTheme]);
 
   return (
-    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+    <AuthProvider>
+      <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+    </AuthProvider>
   );
 }
