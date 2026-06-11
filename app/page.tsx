@@ -3,6 +3,13 @@ import Link from "next/link";
 const APP_STORE_URL = "#" as const;
 const PLAY_STORE_URL = "#" as const;
 
+const FOOTER_LINKS = [
+  { href: "/privacy", label: "Confidentialité" },
+  { href: "/terms", label: "Conditions d’utilisation" },
+  { href: "/legal-notice", label: "Mentions légales" },
+  { href: "/help", label: "Aide" },
+] as const;
+
 export default function Home() {
   return (
     <main className="bg-santu-mesh relative flex min-h-dvh flex-col items-center justify-center overflow-hidden px-6 py-16">
@@ -57,6 +64,21 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <nav
+        className="relative mt-16 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-santu-faint"
+        aria-label="Liens légaux et aide"
+      >
+        {FOOTER_LINKS.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="hover:text-santu-accent transition-colors"
+          >
+            {link.label}
+          </Link>
+        ))}
+      </nav>
     </main>
   );
 }
