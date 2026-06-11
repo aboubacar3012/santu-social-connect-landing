@@ -16,13 +16,13 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Santu Go — Trajets partagés entre villes en Guinée",
+  title: "Santu Connect — Le réseau des entrepreneurs marseillais",
   description:
-    "Trouvez un trajet au bon horaire et au bon budget. Conducteurs et passagers : une app simple pour la mobilité entre villes.",
+    "Rejoignez la communauté entrepreneuriale marseillaise. Annuaire, événements et connexions pour faire avancer vos projets.",
   openGraph: {
-    title: "Santu Go — Trajets partagés entre villes",
+    title: "Santu Connect — Réseau entrepreneurial à Marseille",
     description:
-      "Mise en relation conducteurs et passagers pour des trajets interurbains en Guinée.",
+      "Trouvez vos alliés, participez aux événements et grandissez avec le réseau des entrepreneurs marseillais.",
   },
 };
 
@@ -37,7 +37,7 @@ export default function RootLayout({
       className={`${jakarta.variable} ${outfit.variable} scroll-smooth`}
       suppressHydrationWarning
     >
-      <body className="bg-santu-cream text-santu-ink antialiased dark:bg-[#0c0b09] dark:text-zinc-100">
+      <body className="bg-santu-canvas text-santu-ink antialiased dark:bg-[#0a1219] dark:text-zinc-100">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

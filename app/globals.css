@@ -5,10 +5,13 @@
 @theme inline {
   --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
-  --color-santu-gold: #e6a800;
-  --color-santu-gold-hover: #c99400;
-  --color-santu-cream: #faf8f5;
-  --color-santu-ink: #14120f;
+  --color-santu-accent: #0077b6;
+  --color-santu-accent-hover: #005f92;
+  --color-santu-accent-light: #00a8e8;
+  --color-santu-canvas: #eef2f6;
+  --color-santu-ink: #0d1b2a;
+  --color-santu-muted: #5c6b7a;
+  --color-santu-faint: #8a97a6;
 }
 
 body {
@@ -19,44 +22,43 @@ body {
   font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
 }
 
-/* Fond texturé très léger + mesh chaud (clair) */
+/* Fond mesh bleu — aligné sur l’écran d’accueil de l’app */
 .bg-santu-mesh {
-  background-color: var(--color-santu-cream);
+  background-color: var(--color-santu-canvas);
   background-image:
     radial-gradient(
       ellipse 100% 80% at 15% 20%,
-      rgba(230, 168, 0, 0.14),
+      rgba(0, 119, 182, 0.14),
       transparent 55%
     ),
     radial-gradient(
       ellipse 70% 60% at 85% 10%,
-      rgba(255, 210, 120, 0.12),
+      rgba(0, 168, 232, 0.1),
       transparent 50%
     ),
     radial-gradient(
       ellipse 60% 50% at 50% 100%,
-      rgba(230, 168, 0, 0.06),
+      rgba(0, 119, 182, 0.06),
       transparent 45%
     );
 }
 
 .dark .bg-santu-mesh {
-  background-color: #0c0b09;
+  background-color: #0a1219;
   background-image:
     radial-gradient(
       ellipse 90% 70% at 20% 30%,
-      rgba(230, 168, 0, 0.09),
+      rgba(0, 119, 182, 0.12),
       transparent 55%
     ),
     radial-gradient(
       ellipse 60% 50% at 90% 0%,
-      rgba(230, 168, 0, 0.05),
+      rgba(0, 168, 232, 0.08),
       transparent 50%
     ),
     radial-gradient(ellipse 80% 40% at 50% 100%, rgba(0, 0, 0, 0.4), transparent);
 }
 
-/* Grille décorative discrète */
 .bg-santu-grid {
   background-size: 48px 48px;
   background-image:
@@ -87,4 +89,19 @@ body {
 .animate-santu-float-delayed {
   animation: santu-float 8s ease-in-out infinite;
   animation-delay: -2s;
+}
+
+@keyframes santu-fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-santu-fade-in {
+  animation: santu-fade-in 0.28s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }

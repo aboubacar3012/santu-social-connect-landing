@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { LegalDocumentLayout } from "../components/legal-document-layout";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité — Santu Go",
+  title: "Politique de confidentialité — Santu Connect",
   description:
-    "Comment Santu Go collecte, utilise et protège vos données personnelles.",
+    "Comment Santu Connect collecte, utilise et protège vos données personnelles.",
   robots: { index: true, follow: true },
 };
 
@@ -16,20 +16,19 @@ export default function PrivacyPolicyPage() {
           Politique de confidentialité
         </h1>
         <p className="mt-3 text-sm text-zinc-500 dark:text-zinc-500">
-          Dernière mise à jour : mars 2026 · Application mobile Santu Go
+          Dernière mise à jour : mars 2026 · Application mobile Santu Connect
         </p>
-        <p className="mt-8 rounded-xl border border-amber-200/80 bg-amber-50/80 p-4 text-sm text-amber-950 dark:border-amber-900/40 dark:bg-amber-950/20 dark:text-amber-100">
+        <p className="mt-8 rounded-xl border border-sky-200/80 bg-sky-50/80 p-4 text-sm text-sky-950 dark:border-sky-900/40 dark:bg-sky-950/20 dark:text-sky-100">
           Ce document est fourni à titre informatif et doit être relu par un
           professionnel du droit avant publication définitive, selon votre
-          pays et le cadre applicable (par ex. réglementations locales sur les
-          données personnelles).
+          pays et le cadre applicable (par ex. RGPD).
         </p>
 
         <h2 className="font-display mt-12 text-xl font-bold text-santu-ink dark:text-white">
           1. Responsable du traitement
         </h2>
         <p className="mt-4">
-          Les données personnelles collectées via l’application Santu Go sont
+          Les données personnelles collectées via l’application Santu Connect sont
           traitées par l’éditeur de l’application (ci-après « nous »). Les
           coordonnées complètes de l’éditeur (dénomination sociale, adresse,
           contact) seront indiquées dans les mentions légales et/ou dans
@@ -53,8 +52,12 @@ export default function PrivacyPolicyPage() {
             de l’app dans la limite nécessaire au service ;
           </li>
           <li>
-            Données liées aux trajets : informations publiées ou échangées
-            dans le cadre de la mise en relation (villes, horaires, places,
+            Données de profil : photo, bio, secteur d’activité, informations
+            publiées dans l’annuaire des entrepreneurs ;
+          </li>
+          <li>
+            Données liées aux événements et à la messagerie : informations
+            publiées ou échangées dans le cadre du réseau (événements,
             messages via l’app, etc.) ;
           </li>
           <li>
@@ -72,8 +75,12 @@ export default function PrivacyPolicyPage() {
         <ul className="mt-4 list-inside list-disc space-y-2">
           <li>Créer et gérer votre compte utilisateur ;</li>
           <li>
-            Mettre en relation conducteurs et passagers et afficher les
-            informations utiles aux trajets ;
+            Afficher votre profil dans l’annuaire et mettre en relation les
+            entrepreneurs du réseau ;
+          </li>
+          <li>
+            Gérer les événements, les inscriptions et les échanges entre
+            membres ;
           </li>
           <li>
             Assurer la sécurité du service, prévenir la fraude et les abus ;
@@ -139,8 +146,8 @@ export default function PrivacyPolicyPage() {
           Selon le droit applicable, vous pouvez disposer d’un droit d’accès, de
           rectification, d’effacement, de limitation, d’opposition, de
           portabilité, et du retrait du consentement lorsque le traitement en
-          dépend. Vous pouvez aussi introduire une réclamation auprès d’une
-          autorité de protection des données compétente.
+          dépend. Vous pouvez aussi introduire une réclamation auprès de la CNIL
+          ou d’une autorité de protection des données compétente.
         </p>
         <p className="mt-4">
           Pour exercer vos droits : utilisez le contact indiqué dans
@@ -187,7 +194,7 @@ export default function PrivacyPolicyPage() {
         </p>
 
         <p className="mt-12 text-sm text-zinc-500 dark:text-zinc-500">
-          Pour toute question : contact à compléter par l’éditeur de Santu Go.
+          Pour toute question : contact à compléter par l’éditeur de Santu Connect.
         </p>
       </article>
     </LegalDocumentLayout>

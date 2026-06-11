@@ -7,7 +7,7 @@ export function ThemeToggle({ onHero = false }: { onHero?: boolean }) {
   const isDark = theme === "dark";
 
   const base =
-    "focus-visible:ring-santu-gold flex h-10 w-10 items-center justify-center rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none";
+    "focus-visible:ring-santu-accent flex h-10 w-10 items-center justify-center rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none";
 
   const surface = onHero
     ? "border border-white/25 bg-white/12 text-white shadow-lg shadow-black/10 hover:border-white/40 hover:bg-white/20 focus-visible:ring-offset-transparent"

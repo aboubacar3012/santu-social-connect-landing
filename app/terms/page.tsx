@@ -3,9 +3,9 @@ import Link from "next/link";
 import { LegalDocumentLayout } from "../components/legal-document-layout";
 
 export const metadata: Metadata = {
-  title: "Conditions d’utilisation — Santu Go",
+  title: "Conditions d’utilisation — Santu Connect",
   description:
-    "Conditions générales d’utilisation de l’application mobile Santu Go.",
+    "Conditions générales d’utilisation de l’application mobile Santu Connect.",
   robots: { index: true, follow: true },
 };
 
@@ -17,9 +17,9 @@ export default function TermsOfServicePage() {
           Conditions d’utilisation
         </h1>
         <p className="mt-3 text-sm text-zinc-500 dark:text-zinc-500">
-          Dernière mise à jour : mars 2026 · Application mobile Santu Go
+          Dernière mise à jour : mars 2026 · Application mobile Santu Connect
         </p>
-        <p className="mt-8 rounded-xl border border-amber-200/80 bg-amber-50/80 p-4 text-sm text-amber-950 dark:border-amber-900/40 dark:bg-amber-950/20 dark:text-amber-100">
+        <p className="mt-8 rounded-xl border border-sky-200/80 bg-sky-50/80 p-4 text-sm text-sky-950 dark:border-sky-900/40 dark:bg-sky-950/20 dark:text-sky-100">
           Document type à adapter avec un conseil juridique. Les mentions
           d’éditeur, de droit applicable et de juridiction doivent être complétées
           selon votre structure et le pays concerné.
@@ -30,7 +30,7 @@ export default function TermsOfServicePage() {
         </h2>
         <p className="mt-4">
           Les présentes conditions générales d’utilisation (« CGU ») régissent
-          l’accès et l’usage de l’application mobile Santu Go (« l’Application »)
+          l’accès et l’usage de l’application mobile Santu Connect (« l’Application »)
           et, le cas échéant, des services associés proposés par l’éditeur («
           nous »). En créant un compte ou en utilisant l’Application, vous («
           l’Utilisateur ») acceptez sans réserve les présentes CGU.
@@ -40,12 +40,12 @@ export default function TermsOfServicePage() {
           2. Description du service
         </h2>
         <p className="mt-4">
-          Santu Go est un outil de mise en relation entre personnes proposant
-          des places dans un véhicule (« Conducteurs ») et personnes recherchant
-          un trajet (« Passagers »). Nous ne sommes pas nous-mêmes transporteur :
-          les trajets sont organisés entre utilisateurs, sous leur
-          responsabilité. Le service peut évoluer (fonctionnalités en bêta,
-          zones couvertes progressivement, etc.).
+          Santu Connect est un réseau entrepreneurial local destiné aux
+          entrepreneurs marseillais. L’Application permet notamment de consulter
+          un annuaire de membres, d’échanger via une messagerie, de publier et
+          consulter des événements (afterworks, conférences, rencontres), et de
+          faciliter les connexions professionnelles. Le service peut évoluer
+          (fonctionnalités en bêta, couverture géographique progressive, etc.).
         </p>
 
         <h2 className="font-display mt-10 text-xl font-bold text-santu-ink dark:text-white">
@@ -53,7 +53,7 @@ export default function TermsOfServicePage() {
         </h2>
         <p className="mt-4">
           Vous devez fournir des informations exactes et à jour. Vous êtes
-          responsable de la confidentialité de vos identifiants. Si une âge
+          responsable de la confidentialité de vos identifiants. Si un âge
           minimum est fixé par la loi locale pour utiliser un tel service,
           l’Utilisateur déclare le respecter.
         </p>
@@ -74,20 +74,20 @@ export default function TermsOfServicePage() {
             Ne pas publier de contenus faux, offensants ou contraires aux lois ;
           </li>
           <li>
-            Respecter les autres utilisateurs et les biens (véhicule, bagages,
-            etc.).
+            Respecter les autres membres du réseau et les règles des événements
+            auxquels vous participez.
           </li>
         </ul>
 
         <h2 className="font-display mt-10 text-xl font-bold text-santu-ink dark:text-white">
-          5. Conducteurs et passagers
+          5. Profils, annuaire et événements
         </h2>
         <p className="mt-4">
-          Les modalités financières, horaires et lieux de rendez-vous sont
-          convenues entre utilisateurs dans le cadre autorisé par l’Application
-          et la loi. Chaque Conducteur reste seul responsable de son véhicule, de
-          son assurance et du respect du code de la route. Chaque Passager
-          reste responsable de son comportement et de ses effets personnels.
+          Les informations publiées sur votre profil et les événements que vous
+          créez doivent être exactes et respectueuses. Chaque Utilisateur reste
+          responsable des contenus qu’il publie et des échanges qu’il entretient
+          via l’Application. Les rencontres et collaborations conclues entre
+          membres se font sous leur responsabilité respective.
         </p>
 
         <h2 className="font-display mt-10 text-xl font-bold text-santu-ink dark:text-white">
@@ -96,8 +96,8 @@ export default function TermsOfServicePage() {
         <p className="mt-4">
           Dans les limites autorisées par la loi applicable, nous déclinons toute
           responsabilité pour les dommages indirects, perte de données, perte
-          d’exploitation, ou incidents survenus lors d’un trajet entre
-          utilisateurs. L’Application est fournie « en l’état » ; nous ne
+          d’exploitation, ou incidents survenus lors de rencontres ou
+          collaborations entre utilisateurs. L’Application est fournie « en l’état » ; nous ne
           garantissons pas une disponibilité ininterrompue ni l’absence
           d’erreurs. Nous ne validons pas systématiquement l’identité ou les
           antécédents de chaque utilisateur sauf dispositif explicitement indiqué
@@ -128,7 +128,7 @@ export default function TermsOfServicePage() {
           Le traitement des données est décrit dans la{" "}
           <Link
             href="/privacy"
-            className="text-santu-gold hover:text-santu-gold-hover font-semibold underline-offset-2 hover:underline"
+            className="text-santu-accent hover:text-santu-accent-hover font-semibold underline-offset-2 hover:underline"
           >
             politique de confidentialité
           </Link>
@@ -157,9 +157,8 @@ export default function TermsOfServicePage() {
           12. Droit applicable et litiges
         </h2>
         <p className="mt-4">
-          À compléter : droit applicable (ex. droit de la République de Guinée)
-          et juridiction compétente ou mécanisme de médiation / arbitrage, selon
-          votre situation.
+          À compléter : droit applicable (ex. droit français) et juridiction
+          compétente ou mécanisme de médiation, selon votre situation.
         </p>
 
         <h2 className="font-display mt-10 text-xl font-bold text-santu-ink dark:text-white">
