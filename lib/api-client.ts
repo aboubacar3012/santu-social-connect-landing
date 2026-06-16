@@ -21,11 +21,13 @@ export async function apiFetch<T>(
   options: RequestInit & { token?: string } = {},
 ): Promise<T> {
   const { token, headers, ...rest } = options;
+  const isFormData =
+    typeof FormData !== "undefined" && rest.body instanceof FormData;
   const res = await fetch(`${getApiBase()}${path}`, {
     ...rest,
     headers: {
       Accept: "application/json",
-      ...(rest.body ? { "Content-Type": "application/json" } : {}),
+      ...(!isFormData && rest.body ? { "Content-Type": "application/json" } : {}),
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
       ...headers,
     },
