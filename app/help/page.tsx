@@ -52,6 +52,33 @@ export default function HelpPage() {
               avec le réseau.
             </dd>
           </div>
+          <div>
+            <dt className="font-semibold text-santu-ink dark:text-white">
+              Comment supprimer mon compte ?
+            </dt>
+            <dd className="mt-2 space-y-3">
+              <p>
+                Ouvrez l&apos;application, allez dans l&apos;onglet{" "}
+                <strong>Profil</strong>, puis faites défiler jusqu&apos;en bas
+                de la page. Appuyez sur le bouton{" "}
+                <strong>Supprimer mon compte</strong>, situé sous{" "}
+                <strong>Se déconnecter</strong>.
+              </p>
+              <p>
+                Une confirmation vous sera demandée. Cette action est{" "}
+                <strong>définitive</strong>&nbsp;: vos données personnelles
+                (nom, e-mail, téléphone, photo, bio, etc.) sont effacées et
+                votre profil disparaît de l&apos;annuaire. Vous serez ensuite
+                déconnecté automatiquement.
+              </p>
+              <p>
+                La suppression s&apos;effectue directement depuis
+                l&apos;application&nbsp;; aucune demande par e-mail n&apos;est
+                nécessaire. Si vous rencontrez un problème, contactez le
+                support via la section ci-dessous.
+              </p>
+            </dd>
+          </div>
         </dl>
 
         <h2 className="font-display mt-12 text-xl font-bold text-santu-ink dark:text-white">
